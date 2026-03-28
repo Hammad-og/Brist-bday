@@ -10,17 +10,15 @@
       background: linear-gradient(to bottom, #ffe6f0, #fff);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      padding: 40px 20px; /* spacing around content */
     }
 
     img {
       width: 300px;
       height: 300px;
       object-fit: cover;
-      border-radius: 50%; /* makes the cake circular */
+      border-radius: 50%; /* circular cake */
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       margin-bottom: 30px;
     }
@@ -31,14 +29,16 @@
       text-align: center;
       opacity: 0;
       animation: fadeIn 2s ease-in-out forwards;
+      margin: 20px 0;
     }
 
-    /* Each wish appears with a staggered delay */
+    /* Staggered animation delays */
     .wishes:nth-child(2) { animation-delay: 2s; }
     .wishes:nth-child(3) { animation-delay: 4s; }
     .wishes:nth-child(4) { animation-delay: 6s; }
     .wishes:nth-child(5) { animation-delay: 8s; }
     .wishes:nth-child(6) { animation-delay: 10s; }
+    .wishes:nth-child(7) { animation-delay: 12s; }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -73,8 +73,8 @@
   <div class="wishes">You are a blessing to everyone around you.</div>
   <div class="wishes">May your journey ahead be sweet and bright.</div>
   <div class="wishes">Shine on, Bristi the world is yours!</div>
-  <div class="wishes">Best wishes from Hammad.</div>
-  
+  <div class="wishes">Best wishes from Hammad 💖</div>
+
   <button class="back-btn" onclick="window.location.href='index.html'">Back to First Page</button>
 </body>
 </html>
