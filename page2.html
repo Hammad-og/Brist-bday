@@ -17,8 +17,10 @@
     }
 
     img {
-      width: 400px;
-      border-radius: 20px;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%; /* makes the cake circular */
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       margin-bottom: 30px;
     }
@@ -28,13 +30,15 @@
       color: #d63384;
       text-align: center;
       opacity: 0;
-      animation: fadeIn 3s ease-in-out forwards;
+      animation: fadeIn 2s ease-in-out forwards;
     }
 
-    .wishes:nth-child(2) { animation-delay: 3s; }
-    .wishes:nth-child(3) { animation-delay: 6s; }
-    .wishes:nth-child(4) { animation-delay: 9s; }
-    .wishes:nth-child(5) { animation-delay: 12s; }
+    /* Each wish appears with a staggered delay */
+    .wishes:nth-child(2) { animation-delay: 2s; }
+    .wishes:nth-child(3) { animation-delay: 4s; }
+    .wishes:nth-child(4) { animation-delay: 6s; }
+    .wishes:nth-child(5) { animation-delay: 8s; }
+    .wishes:nth-child(6) { animation-delay: 10s; }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -62,12 +66,15 @@
   <!-- Replace cake.jpg with your actual cake image filename -->
   <img src="cake.jpg" alt="Birthday Cake">
 
+  <!-- Animated humble wishes -->
   <div class="wishes">Happy 17th, Bristi! 🌸</div>
   <div class="wishes">May your spirit glow warmly, like these candles.</div>
-  <div class="wishes">Seventeen is a beautiful age full of dreams.</div>
+  <div class="wishes">Seventeen is a beautiful age—full of dreams.</div>
   <div class="wishes">You are a blessing to everyone around you.</div>
   <div class="wishes">May your journey ahead be sweet and bright.</div>
-
+  <div class="wishes">Shine on, Bristi the world is yours!</div>
+  <div class="wishes">Best wishes from Hammad.</div>
+  
   <button class="back-btn" onclick="window.location.href='index.html'">Back to First Page</button>
 </body>
 </html>
