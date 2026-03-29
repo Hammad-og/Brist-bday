@@ -11,14 +11,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px; /* spacing around content */
+      padding: 40px 20px;
     }
 
     img {
       width: 300px;
       height: 300px;
       object-fit: cover;
-      border-radius: 50%; /* circular cake */
+      border-radius: 50%;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
       margin-bottom: 30px;
     }
@@ -32,7 +32,6 @@
       margin: 20px 0;
     }
 
-    /* Staggered animation delays */
     .wishes:nth-child(2) { animation-delay: 2s; }
     .wishes:nth-child(3) { animation-delay: 4s; }
     .wishes:nth-child(4) { animation-delay: 6s; }
@@ -63,10 +62,14 @@
   </style>
 </head>
 <body>
-  <!-- Replace cake.jpg with your actual cake image filename -->
+
+  <!-- Added Audio -->
+  <audio autoplay loop>
+    <source src="bday.mp3" type="audio/mpeg">
+  </audio>
+
   <img src="cake.jpg" alt="Birthday Cake">
 
-  <!-- Animated humble wishes -->
   <div class="wishes">Happy 17th, Bristi! 🌸</div>
   <div class="wishes">May your spirit glow warmly, like candles.</div>
   <div class="wishes">Seventeen is a beautiful age full of dreams.</div>
@@ -76,6 +79,7 @@
   <div class="wishes">Best wishes from ~H</div>
   <div class="wishes">May this year bring you the kind of happiness you’ve always given others.</div>
   <div class="wishes">No matter where life takes us I’ll always hope you’re smiling and doing well.</div>
+
   <button class="back-btn" onclick="window.location.href='index.html'">Back to First Page</button>
 </body>
 </html>
